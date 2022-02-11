@@ -36,6 +36,7 @@ public class Filter {
                     finishColumn = Integer.parseInt(splitLine[3]);
                     earliestStart = Integer.parseInt(splitLine[4]);
                     latestFinish = Integer.parseInt(splitLine[5]);
+
                 } catch (NumberFormatException e) {
                     System.out.println("Int conversion");
                     e.printStackTrace();
