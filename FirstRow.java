@@ -4,16 +4,20 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FirstRow {
-    int rowNum;
-    int colNum;
-    int fleetSize;
-    int ridesNum;
-    int bonus;
-    int time;
+    public static ArrayList Row() {
+        return firstRow();
+    }
 
-    private ArrayList firstRow() {
+    private static ArrayList firstRow() {
 
         ArrayList row = new ArrayList();
+
+        int rowNum;
+        int colNum;
+        int fleetSize;
+        int ridesNum;
+        int bonus;
+        int time;
 
         try {
             File data = new File("b_should_be_easy.txt");

@@ -7,12 +7,12 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 public class Filter {
-    public static ArrayList main(String[] args) {
+    public static ArrayList main() {
         return filter();
     }
 
     private static ArrayList filter() {
-        ArrayList filteredArray = null;
+        ArrayList filteredArray = new ArrayList();
 
         try {
             File data = new File("b_should_be_easy.txt");
