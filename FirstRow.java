@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FirstRow {
@@ -10,7 +11,9 @@ public class FirstRow {
     int bonus;
     int time;
 
-    private void firstRow() {
+    private ArrayList firstRow() {
+
+        ArrayList row = new ArrayList();
 
         try {
             File data = new File("b_should_be_easy.txt");
@@ -26,6 +29,13 @@ public class FirstRow {
                 bonus = Integer.parseInt(splitLine[4]);
                 time = Integer.parseInt(splitLine[5]);
 
+                row.add(rowNum);
+                row.add(colNum);
+                row.add(fleetSize);
+                row.add(ridesNum);
+                row.add(bonus);
+                row.add(time);
+
             } catch (NumberFormatException e) {
                 System.out.println("Int conversion");
                 e.printStackTrace();
@@ -36,5 +46,6 @@ public class FirstRow {
             System.out.println("File Not Found");
             e.printStackTrace();
         }
+        return row;
     }
 }
