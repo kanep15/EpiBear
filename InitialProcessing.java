@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
-public class Filter {
+public class InitialProcessing {
     public static ArrayList main() {
         return filter();
     }
@@ -17,6 +17,7 @@ public class Filter {
         try {
             File data = new File("b_should_be_easy.txt");
             Scanner scanner = new Scanner(data);
+            filteredArray.add(scanner.nextLine()); //Always add the first line
 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
