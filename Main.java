@@ -34,7 +34,7 @@ public class Main {
 
             int timeRequierd = timeRequ(startRow, finishRow, startColumn, finishColumn);
 
-            //need a way of working out the cars distance to start location, and add it to the time requiered for the ride
+
 
 
         }

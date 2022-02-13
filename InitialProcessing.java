@@ -6,17 +6,25 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
+
+
 public class InitialProcessing {
     public static ArrayList main() {
-        return filter();
+
+        //Uncomment the file your working with
+
+        String fileName = "a_example.txt";
+        //String fileName = "b_should_be_easy.txt";
+
+        File data = new File(fileName);
+        return filter(data);
     }
 
-    private static ArrayList filter() {
+    private static ArrayList filter(File file) {
         ArrayList filteredArray = new ArrayList();
 
         try {
-            File data = new File("b_should_be_easy.txt");
-            Scanner scanner = new Scanner(data);
+            Scanner scanner = new Scanner(file);
             filteredArray.add(scanner.nextLine()); //Always add the first line
 
             while (scanner.hasNextLine()) {
