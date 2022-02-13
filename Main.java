@@ -16,12 +16,12 @@ public class Main {
         int time = Integer.parseInt(processStats[5]);
 
         for (int i = 0; i < fleetSize; i++) {   //Set up a fleet of cars
-            Car car = new Car();
-            car.carNumber = i;
+            Car car = new Car(i);
+            car.setCarNumber(i);
         }
 
         for (int i = 1; i < data.size(); i++) { //i = 1 to skip the first row.
-            int currentTime = i - 1;
+            int currentTime = i - 1;    //I don't think this is the best way to keep time
             String currentData = (String) data.get(i);
             String[] processData = currentData.split(" ");
 
@@ -32,11 +32,11 @@ public class Main {
             int start = Integer.parseInt(processData[4]);
             int finish = Integer.parseInt(processData[5]);
 
-            int timeRequierd = timeRequ(startRow, finishRow, startColumn, finishColumn);
+            int timeRequired = timeRequ(startRow, finishRow, startColumn, finishColumn);
 
+            for (i = 0; i < fleetSize; i++) {
 
-
-
+            }
         }
     }
     private static int timeRequ(int startRow, int finishRow, int startColumn, int finishColumn) {
