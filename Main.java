@@ -17,7 +17,6 @@ public class Main {
 
         for (int i = 0; i < fleetSize; i++) {   //Set up a fleet of cars
             Car car = new Car(i);
-            car.setCarNumber(i);
         }
 
         for (int i = 1; i < data.size(); i++) { //i = 1 to skip the first row.
