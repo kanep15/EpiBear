@@ -46,21 +46,24 @@ public class Main {
         }
         //SortRides ms = new SortRides(rides);
         //ms.sortGivenArray();
-        SortRides test = new SortRides(rides);
-        // araylist x = sortrides(array,index)
+        SortRides test = new SortRides();
+
         ArrayList<Integer[]> test2 = test.getSortedArray(rides);
+
 
         //System.out.println(test2.get(1)[1]);
         for(int i = 0; i<rides.size();i++){
-           System.out.println(test2.get(i)[0]+" ");
-           System.out.print(test2.get(i)[1]+" ");
-            System.out.print(test2.get(i)[2]+" ");
-            System.out.print(test2.get(i)[3]+" ");
-            System.out.print(test2.get(i)[4]+" ");
-            System.out.print(test2.get(i)[5]+" ");
-            System.out.print(test2.get(i)[6]+" ");
-            System.out.print(test2.get(i)[8]+" ");
-            System.out.print(test2.get(i)[9]+" ");
+            System.out.print(test2.get(i)[0]+" nm ");
+            System.out.print(test2.get(i)[1]+" SR ");
+            System.out.print(test2.get(i)[2]+" SC ");
+            System.out.print(test2.get(i)[3]+" CR ");
+            System.out.print(test2.get(i)[4]+" CC ");
+            System.out.print(test2.get(i)[5]+" FR ");
+            System.out.print(test2.get(i)[6]+" FC ");
+            System.out.print(test2.get(i)[7]+" ES ");
+            System.out.print(test2.get(i)[8]+" LF ");
+            System.out.print(test2.get(i)[9]+" TR ");
+            System.out.println();
             //System.out.print(test2.get(i)[5]+" ");
 
 

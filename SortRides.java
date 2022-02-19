@@ -4,6 +4,7 @@ import java.util.function.IntFunction;
 public class SortRides{
     private ArrayList<Integer[]> inputArray;
     int arrayIndex = 7;
+    ArrayList<Integer[]> mergedSortedArray = new ArrayList<Integer[]>();
 
 
     public ArrayList<Integer[]> getSortedArray(ArrayList<Integer[]> unsorted){
@@ -11,8 +12,8 @@ public class SortRides{
         sortGivenArray();
         return inputArray;
     }
-    public SortRides(ArrayList<Integer[]> inputArray){
-        this.inputArray = inputArray;
+    public SortRides(){
+        //this.inputArray = inputArray;
 
 
     }

@@ -13,7 +13,7 @@ public class InitialProcessing {
 
         //Uncomment the file your working with
 
-        //String fileName = "b_should_be_easy";
+        //String fileName = "a_example.txt";
         String fileName = "b_should_be_easy.txt";
 
         File data = new File(fileName);
