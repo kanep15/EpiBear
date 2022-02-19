@@ -17,7 +17,7 @@ public class Main {
         int bonus = firstRow[4];
         int time =firstRow[5];
 
-        System.out.println(firstRow[0]);
+        //System.out.println(firstRow[0]);
 
         for (int i = 0; i < fleetSize; i++) {   //Set up a fleet of cars
             Car car = new Car(i);
@@ -42,12 +42,30 @@ public class Main {
             //need to make an array list with [rideNumber,startrow,startcol.currentrow,currentcol,endrow,endcol,earliestStart,latestFinish,timerequired]
             rides.add(new Integer[]{i,startRow,startColumn,currentRow,currentColumn,finishRow,finishColumn,earliestStart,latestFinish,timeRequired,});
 
-            for (i = 0; i < fleetSize; i++) {
 
-               //fleet.get(i).setCurrentRow(5);
-               //System.out.println(fleet.get(i));
-            }
         }
+        //SortRides ms = new SortRides(rides);
+        //ms.sortGivenArray();
+        SortRides test = new SortRides(rides);
+        // araylist x = sortrides(array,index)
+        ArrayList<Integer[]> test2 = test.getSortedArray(rides);
+
+        //System.out.println(test2.get(1)[1]);
+        for(int i = 0; i<rides.size();i++){
+           System.out.println(test2.get(i)[0]+" ");
+           System.out.print(test2.get(i)[1]+" ");
+            System.out.print(test2.get(i)[2]+" ");
+            System.out.print(test2.get(i)[3]+" ");
+            System.out.print(test2.get(i)[4]+" ");
+            System.out.print(test2.get(i)[5]+" ");
+            System.out.print(test2.get(i)[6]+" ");
+            System.out.print(test2.get(i)[8]+" ");
+            System.out.print(test2.get(i)[9]+" ");
+            //System.out.print(test2.get(i)[5]+" ");
+
+
+
+    }
     }
     private static int timeRequ(int startRow, int finishRow, int startColumn, int finishColumn) {
         return (finishRow - startRow) + (finishColumn - startColumn);
